@@ -1,5 +1,5 @@
 {
-  "name": "ggpet-edited",
+  "name": "ggpet",
   "type": "open-api",
   "spec": null,
   "url": "https://petstore.swagger.io/v2/swagger.json",
@@ -8,7 +8,7 @@
     "securityDefinitionName": "api_key",
     "in": "header",
     "key": "api_key",
-    "value": "test"
+    "value": "4"
   },
   "server": {
     "type": "2.0",
