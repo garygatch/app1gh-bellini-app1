@@ -5,7 +5,7 @@
   "params": {},
   "variables": [
     {
-      "name": "ggpet",
+      "name": "ggpet1",
       "type": "open-api",
       "id": "open-api"
     },
@@ -13,7 +13,7 @@
       "name": "get",
       "description": "",
       "type": "method",
-      "body": "$ctrl.pets = await $ctrl.ggpet.findPetsByStatus({\n    status: 'available'})",
+      "body": "$ctrl.pets = await $ctrl.ggpet1.findPetsByStatus({\n    status: 'available'})",
       "invokeOnLoad": true,
       "isAsync": true,
       "returnType": {
