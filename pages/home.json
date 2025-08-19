@@ -1,0 +1,61 @@
+{
+  "name": "home",
+  "type": "page",
+  "url": "/home",
+  "params": {},
+  "variables": [
+    {
+      "name": "ggpetEdited",
+      "type": "open-api",
+      "id": "open-api"
+    },
+    {
+      "name": "get",
+      "description": "",
+      "type": "method",
+      "body": "$ctrl.pets = await $ctrl.ggpetEdited.findPetsByStatus({\n    status: 'available'})",
+      "invokeOnLoad": true,
+      "isAsync": true,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": [],
+      "watch": []
+    },
+    {
+      "name": "pets",
+      "description": "",
+      "type": "property",
+      "value": ""
+    }
+  ],
+  "children": [
+    {
+      "name": "div",
+      "nodeName": "div",
+      "elementId": "",
+      "attributes": [],
+      "classList": [],
+      "conditionalClasses": [],
+      "conditionalStyles": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [
+        {
+          "name": "text",
+          "nodeName": "text",
+          "textContent": "$ctrl.pets",
+          "evaluate": true
+        }
+      ],
+      "comments": ""
+    }
+  ]
+}
